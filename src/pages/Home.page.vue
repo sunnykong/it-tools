@@ -15,26 +15,26 @@ const { t } = useI18n();
 <template>
   <div class="pt-50px">
     <div class="grid-wrapper">
-      <div v-if="config.showBanner" class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
-        <ColoredCard :title="$t('home.follow.title')" :icon="Heart">
-          {{ $t('home.follow.p1') }}
-          <a
-            href="https://github.com/CorentinTh/it-tools"
-            rel="noopener"
-            target="_blank"
-            :aria-label="$t('home.follow.githubRepository')"
-          >GitHub</a>
-          {{ $t('home.follow.p2') }}
-          <a
-            href="https://twitter.com/ittoolsdottech"
-            rel="noopener"
-            target="_blank"
-            :aria-label="$t('home.follow.twitterAccount')"
-          >Twitter</a>.
-          {{ $t('home.follow.thankYou') }}
-          <n-icon :component="Heart" />
-        </ColoredCard>
-      </div>
+<!--      <div v-if="config.showBanner" class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">-->
+<!--        <ColoredCard :title="$t('home.follow.title')" :icon="Heart">-->
+<!--          {{ $t('home.follow.p1') }}-->
+<!--          <a-->
+<!--            href="https://github.com/CorentinTh/it-tools"-->
+<!--            rel="noopener"-->
+<!--            target="_blank"-->
+<!--            :aria-label="$t('home.follow.githubRepository')"-->
+<!--          >GitHub</a>-->
+<!--          {{ $t('home.follow.p2') }}-->
+<!--          <a-->
+<!--            href="https://twitter.com/ittoolsdottech"-->
+<!--            rel="noopener"-->
+<!--            target="_blank"-->
+<!--            :aria-label="$t('home.follow.twitterAccount')"-->
+<!--          >Twitter</a>.-->
+<!--          {{ $t('home.follow.thankYou') }}-->
+<!--          <n-icon :component="Heart" />-->
+<!--        </ColoredCard>-->
+<!--      </div>-->
 
       <transition name="height">
         <div v-if="toolStore.favoriteTools.length > 0">
